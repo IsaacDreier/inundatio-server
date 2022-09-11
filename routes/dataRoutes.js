@@ -1,10 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const checkJwt = require('../auth');
+const dataController = require('../controllers/dataController');
 
-router.get('/', checkJwt, function (req, res) {
-  console.log(req);
-  res.send('Hello World');
-});
+router.get('/', checkJwt, dataController.getSiteData);
 
 module.exports = router;
