@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-const DataSchema = new Schema({
+const LevelDataSchema = new Schema({
   value: {
     type: Number,
     required: true,
@@ -16,6 +16,6 @@ const DataSchema = new Schema({
   },
 });
 
-const Data = mongoose.model('Data', DataSchema);
+const LevelData = mongoose.model('LevelData', LevelDataSchema);
 
-module.exports = Data;
+module.exports = LevelData;

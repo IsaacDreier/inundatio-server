@@ -1,15 +1,15 @@
-const Data = require('../models/DataModel');
+const LevelData = require('../models/LevelDataModel');
 
 /**
  * Inserts data from array
  * @param {Array} data array of
  */
 
-exports.insertData = async (data) => {
+exports.insertLevelData = async (data) => {
   let docs = data.map((datum) => {
     return { value: datum.value, timestamp: datum.timestamp, site: datum.site };
   });
-  await Data.insertMany(docs);
+  await LevelData.insertMany(docs);
 };
 
 /**
@@ -17,8 +17,8 @@ exports.insertData = async (data) => {
  * @param {Date} date
  */
 
-exports.deleteBefore = async (date) => {
-  await Data.deleteMany({ timestamp: { $lt: date } });
+exports.deleteLevelDataBefore = async (date) => {
+  await LevelData.deleteMany({ timestamp: { $lt: date } });
 };
 
 /**
@@ -29,17 +29,17 @@ exports.deleteBefore = async (date) => {
  */
 
 exports.findBySiteAfterDate = async (site, date) => {
-  return await Data.find({ site: site, timestamp: { $gt: date } }).exec();
+  return await LevelData.find({ site: site, timestamp: { $gt: date } }).exec();
 };
 
 exports.findMostRecentForSite = async (site) => {
-  return await Data.findOne({ site: site }).sort({ timestamp: -1 }).exec();
+  return await LevelData.findOne({ site: site }).sort({ timestamp: -1 }).exec();
 };
 
 exports.findMaxForSite = async (site) => {
-  return await Data.findOne({ site: site }).sort({ value: -1 }).exec();
+  return await LevelData.findOne({ site: site }).sort({ value: -1 }).exec();
 };
 
 exports.findMinForSite = async (site) => {
-  return await Data.findOne({ site }).sort({ value: 1 }).exec();
+  return await LevelData.findOne({ site }).sort({ value: 1 }).exec();
 };
