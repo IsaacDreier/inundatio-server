@@ -1,0 +1,98 @@
+#
+#
+# US Geological Survey
+# retrieved: 2022-09-11 20:31:20 EDT
+# URL: https://nwis.waterdata.usgs.gov/nwis/inventory
+#
+# The Site File stores location and general information about groundwater,
+# surface water, and meteorological sites
+# for sites in USA.
+#
+# The following selected fields are included in this output:
+#
+#  agency_cd       -- Agency
+#  site_no         -- Site identification number
+#  station_nm      -- Site name
+#  site_tp_cd      -- Site type
+#  lat_va          -- DMS latitude
+#  long_va         -- DMS longitude
+#  dec_lat_va      -- Decimal latitude
+#  dec_long_va     -- Decimal longitude
+#  coord_meth_cd   -- Latitude-longitude method
+#  coord_acy_cd    -- Latitude-longitude accuracy
+#  coord_datum_cd  -- Latitude-longitude datum
+#  dec_coord_datum_cd -- Decimal Latitude-longitude datum
+#  district_cd     -- District code
+#  state_cd        -- State code
+#  county_cd       -- County code
+#  country_cd      -- Country code
+#  land_net_ds     -- Land net location description
+#  map_nm          -- Name of location map
+#  map_scale_fc    -- Scale of location map
+#  alt_va          -- Altitude of Gage/land surface
+#  alt_meth_cd     -- Method altitude determined
+#  alt_acy_va      -- Altitude accuracy
+#  alt_datum_cd    -- Altitude datum
+#  huc_cd          -- Hydrologic unit code
+#  basin_cd        -- Drainage basin code
+#  topo_cd         -- Topographic setting code
+#  data_types_cd   -- Flags for the type of data collected
+#  instruments_cd  -- Flags for instruments at site
+#  construction_dt -- Date of first construction
+#  inventory_dt    -- Date site established or inventoried
+#  drain_area_va   -- Drainage area
+#  contrib_drain_area_va -- Contributing drainage area
+#  tz_cd           -- Mean Greenwich time offset
+#  local_time_fg   -- Local standard time flag
+#  reliability_cd  -- Data reliability code
+#  gw_file_cd      -- Data-other GW files
+#  nat_aqfr_cd     -- National aquifer code
+#  aqfr_cd         -- Local aquifer code
+#  aqfr_type_cd    -- Local aquifer type code
+#  well_depth_va   -- Well depth
+#  hole_depth_va   -- Hole depth
+#  depth_src_cd    -- Source of depth data
+#  project_no      -- Project number
+#  rt_bol          -- Real-time data flag
+#  peak_begin_date -- Peak-streamflow data begin date
+#  peak_end_date   -- Peak-streamflow data end date
+#  peak_count_nu   -- Peak-streamflow data count
+#  qw_begin_date   -- Water-quality data begin date
+#  qw_end_date     -- Water-quality data end date
+#  qw_count_nu     -- Water-quality data count
+#  gw_begin_date   -- Field water-level measurements begin date
+#  gw_end_date     -- Field water-level measurements end date
+#  gw_count_nu     -- Field water-level measurements count
+#  sv_begin_date   -- Site-visit data begin date
+#  sv_end_date     -- Site-visit data end date
+#  sv_count_nu     -- Site-visit data count
+#
+#
+# query started 2022-09-11 20:31:20 EDT
+#
+# there are 21 sites matching the search criteria.
+#
+#
+agency_cd	site_no	station_nm	site_tp_cd	lat_va	long_va	dec_lat_va	dec_long_va	coord_meth_cd	coord_acy_cd	coord_datum_cd	dec_coord_datum_cd	district_cd	state_cd	county_cd	country_cd	land_net_ds	map_nm	map_scale_fc	alt_va	alt_meth_cd	alt_acy_va	alt_datum_cd	huc_cd	basin_cd	topo_cd	data_types_cd	instruments_cd	construction_dt	inventory_dt	drain_area_va	contrib_drain_area_va	tz_cd	local_time_fg	reliability_cd	gw_file_cd	nat_aqfr_cd	aqfr_cd	aqfr_type_cd	well_depth_va	hole_depth_va	depth_src_cd	project_no	rt_bol	peak_begin_date	peak_end_date	peak_count_nu	qw_begin_date	qw_end_date	qw_count_nu	gw_begin_date	gw_end_date	gw_count_nu	sv_begin_date	sv_end_date	sv_count_nu
+5s	15s	50s	7s	11s	12s	16n	16n	1s	1s	10s	10s	3s	2s	3s	2s	23s	20s	7s	8s	1s	3s	10s	16s	2s	1s	30s	30s	8s	8s	8s	8s	6s	1s	1s	30s	10s	8s	1s	8s	8s	1s	12s	3n	10d	10d	8n	10d	10d	8n	10d	10d	8n	10d	10d	8n
+USGS	174400064514700	JOLLY HILL GUT AT JOLLY HILL, ST. CROIX, USVI	ST	174400	0645147	17.73136278	-64.86264610	M	S	NAD27	NAD83	72	78	010	US	      S   T     R	ST.CROIX	  24000					21020002			NNNNNNNNNNNNNNNNNNNNNNNNNNNNNO	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN			2.1		AST	N		NNNNNNNN							PR454300100													
+USGS	50252000	BONNE RESOLUTION GUT AT BONNE RESOLUTION ST THOMAS	ST	182157	0645734	18.36384507	-64.95903520	M	S	NAD27	NAD83	72	78	030	US		WESTERN ST. THOMAS	  24000	 280	M	 20	NGVD29	21020001		C	INNNINNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19621215	0.49		AST	N		NNNNNNNN							PR454300100	1	1963-08-28	2005-10-10	28	--	--	0	--	--	0	1984-08-24	2006-11-13	150
+USGS	50257500	LOVENLUND GUT NR LOVENLUND, ST. THOMAS USVI	ST	182129	0645405	18.35606536	-64.90097610	M	S	NAD27	NAD83	72	78	030	US		CENTRAL ST.THOMAS	  24000	 240	M	20	NGVD29	21020001	36	C	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNO	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19920401			AST	N		NNNNNNNN							PR4543001110													
+USGS	50262000	UNNAMED CREEK AT BENNER HILL, ST. THOMAS USVI	ST	182000	0645110	18.33134320	-64.85236288	M	S	NAD27	NAD83	72	78	030	US		EASTERN ST. THOMAS	  24000	 40	M	  1	NGVD29	21020001		C	NANANNNNNNNNNNNNNNNNNNNNNNNNNN	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19990723			AST	N		NNNNNNNN							PR454315200	0	--	--	0	1999-12-08	1999-12-08	1	--	--	0	--	--	0
+USGS	50265500	UNNAMED CREEK AT RED HOOK, ST. THOMAS USVI	ST	181927	0645221	18.32217670	-64.87208600	M	S	NAD27	NAD83	72	78	030	US		EASTERN ST. THOMAS	  24000	 40	M	  1	NGVD29	21020001		C	NANANNNNNNNNNNNNNNNNNNNNNNNNNN	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19990723			AST	N		NNNNNNNN							PR454315200	0	--	--	0	1999-12-08	1999-12-08	1	--	--	0	--	--	0
+USGS	50272000	HOFFMAN POND AT HOFFMAN, ST. THOMAS USVI	ST	182008	0645352	18.33356550	-64.89736490	M	S	NAD27	NAD83	72	78	030	US		CENTRAL ST. THOMAS	  24000					21020001			NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN			0.13		AST	N		NNNNNNNN							PR454300100	0	--	--	0	1967-11-20	1968-05-29	7	--	--	0	--	--	0
+USGS	50274000	TURPENTINE RUN AT MT. ZION, ST. THOMAS USVI	ST	181955	0645320	18.32995440	-64.88847560	M	S	NAD27	NAD83	72	78	030	US			  24000	 90	M	 1.	NGVD29	21020001			INNNINNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19921001	2.33		AST	N		NNNNNNNN							PR454300100	1	1993-04-28	2005-10-04	14	1967-10-02	1972-05-31	7	--	--	0	1992-10-05	2006-11-15	105
+USGS	50276000	TURPENTINE RUN AT MARIENDAL, ST. THOMAS USVI	ST	181948	0645258	18.32800998	-64.88236420	M	S	NAD27	NAD83	72	78	030	US		EASTERN ST. THOMAS,V	  24000					21020001			NNNNNNNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN			2.97		AST	N		NNNNNNNN							PR454300100	1	1963-08-28	1992-01-05	17	1999-07-28	1999-12-08	3	--	--	0	1984-08-24	1991-07-09	14
+USGS	50281000	HAWKNEST GUT AT HAWKNEST BAY, ST. JOHN USVI	ST	182053	0644637	18.34606495	-64.77652690	M	S	NAD27	NAD83	72	78	020	US		ST. JOHN	  24000					21020001			NNNNNNNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN					AST	N		NNNNNNNN							PR454300100													
+USGS	50292600	LAMESHUR BAY GUT AT LAMESHUR BAY, ST. JOHN  USVI	ST	181935	0644320	18.32439926	-64.72180310	M	S	NAD27	NAD83	72	78	020	US		WESTERN ST.JOHN	  24000	 40	M	 10	NGVD29	21020001		C	INNNINNNNNNIINNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19920702	0.38		AST	N		NNNNNNNN							PR454311100	1	1992-11-27	1992-11-27	1	--	--	0	--	--	0	1992-11-28	1992-12-30	2
+USGS	50294000	FISH BAY GUT AT FISH BAY, ST. JOHN USVI	ST	181942	0644552	18.32634339	-64.76402640	M	S	NAD27	NAD83	72	78	020	US		ST. JOHN	  24000	 10	M	 10	NGVD29	21020001	38	S	INNNINNNNNNIINNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19911119	1.48		AST	N		NNNNNNNN							PR454300100	1	1992-05-24	1993-11-26	3	--	--	0	--	--	0	1992-05-24	1993-06-20	5
+USGS	50295000	GUINEA GUT AT BETHANY, ST. JOHN, USVI	ST	181955	0644650	18.32995428	-64.78013809	M	S	NAD27	NAD83	72	78	020	US			  24000	 260	M	 10	NGVD29	21020001			INNNINNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19630827	0.37		AST	N		NNNNNNNN							PR454300100	1	1963-08-27	2005-10-04	26	--	--	0	--	--	0	1985-09-19	2006-11-14	123
+USGS	50295500	CRUZ BAY GUT AT CRUZ BAY, ST. JOHN USVI	ST	182001	0644724	18.33162084	-64.78958280	M	S	NAD27	NAD83	72	78	020	US		WESTERN ST.JOHN	  24000	 120	M	 10	NGVD29	21020001		S	INNNINNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19911119			AST	N		NNNNNNNN							PR454300100	1	--	--	0	--	--	0	--	--	0	1992-05-24	1993-06-20	4
+USGS	50332000	RIVER GUT AT RIVER, ST. CROIX USVI	ST	174432	0644852	17.74025128	-64.81403450	M	S	NAD27	NAD83	72	78	010	US		FREDERIKSTED	  24000	 155	M	 10	NGVD29	21020002		C	INNNINNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19910814	1.42		AST	N		NNNNNNNN							PR454300111	1	1992-05-24	1993-05-27	2	--	--	0	--	--	0	1993-03-03	1993-07-23	4
+USGS	50333500	RIVER GUT NR GOLDEN GROVE, ST. CROIX USVI	ST	174246	0644758	17.71080795	-64.79903450	M	S	NAD27	NAD83	72	78	010	US		FREDERIKSTED	  24000	 40	M	  5	NGVD29	21020001			INNNINNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN			5.40		AST	N	C	NNNNNNNN							PR454300100	1	1990-10-26	1993-05-27	3	--	--	0	--	--	0	1990-10-25	1993-07-23	14
+USGS	50334500	BETHLEHEM GUT AT HWY 66 AT FAIRPLAINS, ST. CROIX	ST	174231	0644715	17.70664140	-64.78708990	M	S	NAD27	NAD83	72	78	010	US		CHRISTIANSTED	  24000	 20.0	M	  3	NGVD29	21020002			INNNINNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN			4.11		AST	N	C	NNNNNNNN							PR454300100	0	--	--	0	--	--	0	--	--	0	1990-11-21	1993-07-24	7
+USGS	50335000	RIVER GUT AT ALEXANDER HAMILTON AIRPORT, ST.CROIX	ST	174231	0644716	17.70664140	-64.78736770	M	S	NAD27	NAD83	72	78	010	US		FREDERIKSTED	  24000	 20	M	3	NGVD29	21020001			NNNNNNNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN					AST	N	C	NNNNNNNN							PR454300100													
+USGS	50337500	GUT 4.5 AT CANE VALLEY ST. CROIX, USVI	ST	174325	0645101	17.72164099	-64.84986830	M	S	NAD27	NAD83	72	78	010	US		FREDERIKSTED	  24000	 300	M	 16	NGVD29	21020002		C	INNNINNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19910814			AST	N		NNNNNNNN							PR454300111	1	--	--	0	--	--	0	--	--	0	1993-07-24	1993-07-24	1
+USGS	50345000	JOLLY HILL GUT AT JOLLY HILL, ST. CROIX USVI	ST	174400	0645147	17.73136278	-64.86264610	M	S	NAD27	NAD83	72	78	010	US		FREDERIKSTED	  24000	 140	M	 10	NGVD29	21020002		C	INNNINNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19630104	2.1		AST	N		NNNNNNNN							PR454300100	1	1963-01-04	2005-11-24	29	--	--	0	--	--	0	1985-12-10	2006-12-04	93
+USGS	50348000	SALT RIVER AT CANNAN, ST. CROIX USVI	ST	174540	0644753	17.75913945	-64.79764507	M	S	NAD27	NAD83	72	78	010	US		CHRISTIANSTED	  24000	 315	M	 16	NGVD29	21020002		C	INNNINNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19910814			AST	N		NNNNNNNN							PR454300111	1	--	--	0	--	--	0	--	--	0	--	--	0
+USGS	50349000	GUT 10 NR ALTONA, ST. CROIX USVI	ST	174400	0644130	17.73136253	-64.69125350	M	S	NAD27	NAD83	72	78	010	US		CHRISTIANSTED	  24000	 210	M	 16	NGVD29	21020002		C	INNNINNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19910814			AST	N		NNNNNNNN							PR454300111	1	--	--	0	--	--	0	--	--	0	--	--	0

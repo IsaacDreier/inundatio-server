@@ -1,0 +1,84 @@
+#
+#
+# US Geological Survey
+# retrieved: 2022-09-11 20:25:13 EDT
+# URL: https://nwis.waterdata.usgs.gov/nwis/inventory
+#
+# The Site File stores location and general information about groundwater,
+# surface water, and meteorological sites
+# for sites in USA.
+#
+# The following selected fields are included in this output:
+#
+#  agency_cd       -- Agency
+#  site_no         -- Site identification number
+#  station_nm      -- Site name
+#  site_tp_cd      -- Site type
+#  lat_va          -- DMS latitude
+#  long_va         -- DMS longitude
+#  dec_lat_va      -- Decimal latitude
+#  dec_long_va     -- Decimal longitude
+#  coord_meth_cd   -- Latitude-longitude method
+#  coord_acy_cd    -- Latitude-longitude accuracy
+#  coord_datum_cd  -- Latitude-longitude datum
+#  dec_coord_datum_cd -- Decimal Latitude-longitude datum
+#  district_cd     -- District code
+#  state_cd        -- State code
+#  county_cd       -- County code
+#  country_cd      -- Country code
+#  land_net_ds     -- Land net location description
+#  map_nm          -- Name of location map
+#  map_scale_fc    -- Scale of location map
+#  alt_va          -- Altitude of Gage/land surface
+#  alt_meth_cd     -- Method altitude determined
+#  alt_acy_va      -- Altitude accuracy
+#  alt_datum_cd    -- Altitude datum
+#  huc_cd          -- Hydrologic unit code
+#  basin_cd        -- Drainage basin code
+#  topo_cd         -- Topographic setting code
+#  data_types_cd   -- Flags for the type of data collected
+#  instruments_cd  -- Flags for instruments at site
+#  construction_dt -- Date of first construction
+#  inventory_dt    -- Date site established or inventoried
+#  drain_area_va   -- Drainage area
+#  contrib_drain_area_va -- Contributing drainage area
+#  tz_cd           -- Mean Greenwich time offset
+#  local_time_fg   -- Local standard time flag
+#  reliability_cd  -- Data reliability code
+#  gw_file_cd      -- Data-other GW files
+#  nat_aqfr_cd     -- National aquifer code
+#  aqfr_cd         -- Local aquifer code
+#  aqfr_type_cd    -- Local aquifer type code
+#  well_depth_va   -- Well depth
+#  hole_depth_va   -- Hole depth
+#  depth_src_cd    -- Source of depth data
+#  project_no      -- Project number
+#  rt_bol          -- Real-time data flag
+#  peak_begin_date -- Peak-streamflow data begin date
+#  peak_end_date   -- Peak-streamflow data end date
+#  peak_count_nu   -- Peak-streamflow data count
+#  qw_begin_date   -- Water-quality data begin date
+#  qw_end_date     -- Water-quality data end date
+#  qw_count_nu     -- Water-quality data count
+#  gw_begin_date   -- Field water-level measurements begin date
+#  gw_end_date     -- Field water-level measurements end date
+#  gw_count_nu     -- Field water-level measurements count
+#  sv_begin_date   -- Site-visit data begin date
+#  sv_end_date     -- Site-visit data end date
+#  sv_count_nu     -- Site-visit data count
+#
+#
+# query started 2022-09-11 20:25:13 EDT
+#
+# there are 7 sites matching the search criteria.
+#
+#
+agency_cd	site_no	station_nm	site_tp_cd	lat_va	long_va	dec_lat_va	dec_long_va	coord_meth_cd	coord_acy_cd	coord_datum_cd	dec_coord_datum_cd	district_cd	state_cd	county_cd	country_cd	land_net_ds	map_nm	map_scale_fc	alt_va	alt_meth_cd	alt_acy_va	alt_datum_cd	huc_cd	basin_cd	topo_cd	data_types_cd	instruments_cd	construction_dt	inventory_dt	drain_area_va	contrib_drain_area_va	tz_cd	local_time_fg	reliability_cd	gw_file_cd	nat_aqfr_cd	aqfr_cd	aqfr_type_cd	well_depth_va	hole_depth_va	depth_src_cd	project_no	rt_bol	peak_begin_date	peak_end_date	peak_count_nu	qw_begin_date	qw_end_date	qw_count_nu	gw_begin_date	gw_end_date	gw_count_nu	sv_begin_date	sv_end_date	sv_count_nu
+5s	15s	50s	7s	11s	12s	16n	16n	1s	1s	10s	10s	3s	2s	3s	2s	23s	20s	7s	8s	1s	3s	10s	16s	2s	1s	30s	30s	8s	8s	8s	8s	6s	1s	1s	30s	10s	8s	1s	8s	8s	1s	12s	3n	10d	10d	8n	10d	10d	8n	10d	10d	8n	10d	10d	8n
+USGS	16800500	Hasngot Stream, Saipan, CNMI	ST	151249.69	-1454629.8	15.21380278	145.77494440	M	S	NAD83	NAD83	15	69	110	US		Saipan	  24000	 100	M	 10	LMSL	22020000			NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN			0.43		GST	N		NYNNNNNN																				
+USGS	16801000	SF Talufofo Stream, Saipan, CNMI	ST	151253.69	-1454622.8	15.21491389	145.77300000	G	S	NAD83	NAD83	15	69	110	US		Saipan	  24000	 100	M	 10	LMSL	22020000			NNNNNNNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN			0.69		GST	N		NYNNNNNN								1	1968-11-19	1993-08-08	25	1976-10-22	1990-06-15	52	--	--	0	1989-11-15	2001-07-25	44
+USGS	16801500	MF Talufofo Stream, Saipan, CNMI	ST	151303.69	-1454625.8	15.21769167	145.77383330	M	S	NAD83	NAD83	15	69	110	US		Saipan	  24000	 25	M	  5	LMSL	22020000			NNNNNNNNNNNNNNNNNNNNNNNNNNNNNI	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN			0.35		GST	N		NYNNNNNN								0	1968-06-28	1981-11-15	15	1976-10-22	1982-11-19	44	--	--	0	--	--	0
+USGS	16801800	NF Talufofo Stream, Saipan, CNMI	ST	151311.69	-1454649.8	15.21991389	145.78050000	M	S	NAD83	NAD83	15	69	110	US		Saipan	  24000	 40	M	  5	LMSL	22020000			NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN			0.39		GST	N		NYNNNNNN																				
+USGS	16802000	Talufofo Stream, Saipan, CNMI	ST	151309.69	-1454651.8	15.21935833	145.78105560	M	S	NAD83	NAD83	15	69	110	US		Saipan	  24000	 30	M	  5	LMSL	22020000			NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN			1.43		GST	N		NYNNNNNN																				
+USGS	16804500	Rapugao Stream, Saipan, CNMI	ST	151334.69	-1454454.79	15.22630278	145.74855280	M	S	NAD83	NAD83	15	69	110	US		Saipan	  24000	 50	M	 15	LMSL	22020000			NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN			1.34		GST	N		NYNNNNNN																				
+USGS	16806050	Okgok Stream, Rota, CNMI	ST	140706.0	-1451117.73	14.11833333	145.18825830	M	S	NAD83	NAD83	15	69	100	US		Rota 1983	  24000								NNNANNNNNNNNNNNNNNNNNNNNNNNNNN	NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN		19931230			GST	N		NYNNNNNN																				
