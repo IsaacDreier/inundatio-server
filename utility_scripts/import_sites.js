@@ -5,7 +5,7 @@ const { isNumeric } = require('validator');
 
 async function parseSiteFile(folder) {
   const contents = await fs.readFile(
-    `./site_info/${folder}/inventory`,
+    `./static_data/site_info/${folder}/inventory`,
     'utf-8'
   );
   const lines = contents.split('\n');
@@ -111,7 +111,7 @@ async function parseSiteFile(folder) {
 
 async function main() {
   await connectToDatabase();
-  const folders = await fs.readdir('./site_info');
+  const folders = await fs.readdir('./static_data/site_info');
   folders.forEach(async (folder) => {
     if (folder != '.DS_Store') await parseSiteFile(folder);
   });
