@@ -1,5 +1,6 @@
 const LevelData = require('../models/LevelDataModel');
-
+const Location = require('../models/LocationModel');
+const { isPostalCode, isAlphanumeric } = require('validator');
 /**
  * Inserts data from array
  * @param {Array} data array of
@@ -42,4 +43,16 @@ exports.findMaxForSite = async (site) => {
 
 exports.findMinForSite = async (site) => {
   return await LevelData.findOne({ site }).sort({ value: 1 }).exec();
+};
+
+exports.getLocationByZipcode = async (zip) => {
+  if (!isPostalCode(zip, 'US')) throw new Error(`${zip} is not a zipcode`);
+  return await Location.findOne({ zip: zip }).exec();
+};
+
+exports.getLocationsByName = async (name) => {
+  if (!isAlphanumeric(name, 'en-US', { ignore: " -,'" }))
+    throw new Error('illegal characters in name parameter');
+  const locations = await Location.find({ $text: { $search: name } });
+  return locations;
 };
