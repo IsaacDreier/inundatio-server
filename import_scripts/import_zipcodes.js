@@ -31,8 +31,10 @@ async function main() {
         zip,
         name,
         state,
-        lat,
-        long,
+        location: {
+          type: 'Point',
+          coordinates: [long, lat],
+        },
       };
       try {
         await Location.create(locDoc);

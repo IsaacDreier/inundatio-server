@@ -90,8 +90,10 @@ async function parseSiteFile(folder) {
         agency: agency_cd,
         name: station_nm,
         type: site_tp_cd,
-        latDec: dec_lat_va,
-        longDec: dec_long_va,
+        location: {
+          type: 'Point',
+          coordinates: [dec_long_va, dec_lat_va],
+        },
         coordDatum: coord_datum_cd,
         district: district_cd,
         state: state_cd,

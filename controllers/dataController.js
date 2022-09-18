@@ -2,8 +2,9 @@ const {
   findBySiteAfterDate,
   getLocationByZipcode,
   getLocationsByName,
+  getSitesNearLatLong,
 } = require('../services/dataService');
-const { isPostalCode, isAlphanumeric } = require('validator');
+const { isPostalCode, isAlphanumeric, isLatLong } = require('validator');
 
 exports.getSiteData = async (req, res) => {
   try {
@@ -32,6 +33,22 @@ exports.getLocations = async (req, res) => {
         .send({ error: 'Must supply either a zipcode or name query' });
     }
     res.status(200).json(locations);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ error: 'Server Error' });
+  }
+};
+
+exports.getSitesNearLocation = async (req, res) => {
+  try {
+    if (!isLatLong(`${req.query.lat},${req.query.long}`))
+      throw new Error('invaild latitude and longitude');
+    const sites = await getSitesNearLatLong(
+      req.query.lat,
+      req.query.long,
+      req.query.distance
+    );
+    res.status(200).send(sites);
   } catch (error) {
     console.log(error);
     res.status(500).send({ error: 'Server Error' });

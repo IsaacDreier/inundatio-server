@@ -5,4 +5,5 @@ const dataController = require('../controllers/dataController');
 
 router.get('/', checkJwt, dataController.getSiteData);
 router.get('/locations', checkJwt, dataController.getLocations);
+router.get('/sites', checkJwt, dataController.getSitesNearLocation);
 module.exports = router;

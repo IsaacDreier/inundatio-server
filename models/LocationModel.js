@@ -31,17 +31,14 @@ const LocationSchema = new Schema({
       message: (p) => `name contains illegal characters`,
     },
   },
-  lat: {
-    type: Number,
-    required: true,
-  },
-  long: {
-    type: Number,
-    required: true,
+  location: {
+    type: { type: 'String', default: 'Point' },
+    coordinates: [Number],
   },
 });
 
 LocationSchema.index({ name: 'text', state: 'text' });
+LocationSchema.index({ location: '2dsphere' });
 const Location = new mongoose.model('Location', LocationSchema);
 
 module.exports = Location;

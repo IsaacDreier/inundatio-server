@@ -1,6 +1,7 @@
 const LevelData = require('../models/LevelDataModel');
 const Location = require('../models/LocationModel');
-const { isPostalCode, isAlphanumeric } = require('validator');
+const Site = require('../models/SiteModel');
+const { isPostalCode, isAlphanumeric, isLatLong } = require('validator');
 /**
  * Inserts data from array
  * @param {Array} data array of
@@ -55,4 +56,19 @@ exports.getLocationsByName = async (name) => {
     throw new Error('illegal characters in name parameter');
   const locations = await Location.find({ $text: { $search: name } });
   return locations;
+};
+
+exports.getSitesNearLatLong = async (lat, long, maxDistance) => {
+  if (!isLatLong(`${lat},${long}`))
+    throw new Error('invalid latitude and longitude');
+  const sites = await Site.find({
+    location: {
+      $near: {
+        $geometry: { type: 'Point', coordinates: [long, lat] },
+        $maxDistance: maxDistance * 1609,
+      },
+    },
+  });
+  console.log(sites);
+  return sites;
 };

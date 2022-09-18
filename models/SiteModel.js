@@ -6,8 +6,10 @@ const SiteSchema = new Schema({
   agency: { type: String, required: true },
   name: { type: String, required: true },
   type: String,
-  latDec: { type: Number, required: true },
-  longDec: { type: Number, required: true },
+  location: {
+    type: { type: 'String', default: 'Point' },
+    coordinates: [Number],
+  },
   coordDatum: String,
   district: String,
   state: String,
@@ -17,6 +19,7 @@ const SiteSchema = new Schema({
   altDatum: String,
 });
 
+SiteSchema.index({ location: '2dsphere' });
 const Site = new mongoose.model('Site', SiteSchema);
 
 module.exports = Site;
